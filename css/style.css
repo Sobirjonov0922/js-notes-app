@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f5f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.heading {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  color: #151515;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  margin-top: 4px;
+  padding: 6px 8px;
+  color: #f1f5f8;
+  background: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notes {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note__card {
+  border-radius: 12px;
+  padding: 10px;
+  width: 270px;
+  height: 380px;
+  background: lightyellow;
+  box-shadow: 6px 6px 10px 2px #cacaca;
+}
+
+.note__header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.note__title {
+  width: 100%;
+  font-size: 20px;
+}
+
+.note__input,
+.note__textarea {
+  border: none;
+  outline: none;
+  padding: 4px;
+  width: 100%;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  caret-color: red;
+}
+
+.note__actions {
+  display: flex;
+  gap: 6px;
+}
+
+.note__edit,
+.note__delete {
+  border-radius: 4px;
+  outline: none;
+  padding: 6px;
+  color: #f1f5f8;
+  cursor: pointer;
+}
+
+.note__edit {
+  border: 2px outset #d3b944;
+  background: #d3b944aa;
+}
+
+.note__edit:active {
+  border: 2px inset #d3b944;
+}
+.note__delete {
+  border: 2px outset #bc2d2d;
+  background: #d34444;
+}
+
+.note__delete:active {
+  border: 2px inset #bc2d2d;
+}
+
+.hidden {
+  display: none;
+}
